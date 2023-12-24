@@ -4,6 +4,15 @@
   flex-direction: column;
 }
 
+h2 {
+  line-height: 150%;
+}
+
+
+.p-secondary {
+  font-family: var(--font-base-thin2);
+}
+
 .app__profiles {
   display: flex;
   justify-content: center;

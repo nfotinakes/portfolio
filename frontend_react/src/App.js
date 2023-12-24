@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.scss';
-import { About, Footer, Header, Skills, Testimonial, Work } from './container';
+import { About, Footer, Header, Skills, Testimonial, Work, Contact} from './container';
 import { Navbar } from './components';
 
 function App() {
@@ -11,8 +11,10 @@ function App() {
       <About/>
       <Work/>
       <Skills/>
-      <Testimonial />
-      <Footer />
+      {/* <Testimonial /> */}
+      {/* <Footer /> */}
+      <Contact />
+
     </div>
   );
 }

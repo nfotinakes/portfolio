@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Chivo:wght@400;600;700&family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
-  --font-base: "DM Sans", sans-serif;
+  --font-base: "Bungee", sans-serif;
+  --font-base-thin: "Bungee Hairline", sans-serif;
+  --font-sec: "Notable", sans-serif;
+  --font-base-thin2: "Open Sans", sans-serif;
+
 
   --primary-color: #edf2f8;
-  --secondary-color: #313bac;
+  --secondary-color: #e5771e;
+  --third-color: #f9e3d2;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;

@@ -10,6 +10,10 @@
   .app__primarybg {
     background-color: var(--primary-color);
   }
+
+  .app__secondarybg {
+    background-color: var(--third-color);
+  }
   
   .app__container {
     width: 100%;
@@ -48,6 +52,8 @@
     p {
       text-transform: uppercase;
       color: var(--black-color);
+      font-family: var(--font-base-thin2);
+      font-size: 1rem;
     }
   }
   
@@ -89,7 +95,8 @@
     text-align: left;
   
     @media screen and (min-width: 2000px) {
-      font-size: 2rem;
+      padding-top: 2%;
+      font-size: 1.5rem;
     }
   
     @media screen and (max-width: 450px) {

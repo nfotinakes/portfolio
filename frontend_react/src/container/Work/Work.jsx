@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 import "./Work.scss";
 
@@ -98,12 +98,12 @@ function Work() {
             </div>
             <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
-              <p className="p-text" style={{ marginTop: 10 }}>
+              <p className="p-text p-thin" style={{ marginTop: 10 }}>
                 {work.description}
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text p-thin">{work.tags[0]}</p>
               </div>
             </div>
           </div>
@@ -113,4 +113,8 @@ function Work() {
   );
 }
 
-export default AppWrap(Work, "work");
+export default AppWrap(
+  MotionWrap(Work, 'app__works'),
+  'work',
+  'app__secondarybg',
+);

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState, useEffect } from "react";
-import {AppWrap} from '../../wrapper';
+import {AppWrap, MotionWrap} from '../../wrapper';
 import "./About.scss";
 import { urlFor, client } from "../../client";
 
@@ -38,7 +38,7 @@ function About() {
   return (
     <>
       <h2 className="head-text">
-        I Know That <span>Good Design</span>
+        I Know That <span>Good Development</span>
         <br /> means <span>Good Business</span>
       </h2>
 
@@ -53,11 +53,11 @@ function About() {
           >
             <img src={urlFor(about.imgUrl)} alt={about.title} />
 
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
+            <h2 className="bold-text" style={{ marginTop: 15, textAlign: "center" }}>
               {" "}
               {about.title}{" "}
             </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
+            <p className="p-text p-secondary" style={{ marginTop: 10 }}>
               {" "}
               {about.description}{" "}
             </p>
@@ -68,4 +68,10 @@ function About() {
   );
 }
 
-export default AppWrap(About, 'about');
+// export default AppWrap(About, 'about');
+
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  'app__whitebg',
+);

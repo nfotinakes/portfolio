@@ -24,22 +24,30 @@ function Header() {
         className="app__header-info"
       >
         <div className="app__header-badge">
-          <div className="badge-cmp app__flex">
-            <span>👋</span>
-            <div style={{ marginLeft: 20 }}>
-              <p className="p-text">Hello, I am </p>
-              <h1 className="head-text">Nick</h1>
+        <div className="badge-cmp app__flex">
+          
+            
+            <div className="app__header-main" >
+              
+              <h1>NICK FOTINAKES</h1>
             </div>
+          
+          <div className="app__header-container">
+
+          
+            <h2> Full Stack Developer </h2> 
+    
+            
+            <h3>React // Node // SQL </h3>
           </div>
 
-          <div className="tag-cmp app__flex">
-            <p className="p-text"> Full Stack Developer </p>
-            <p className="p-text">React // Node // SQL </p>
-          </div>
+            </div>
+          
         </div>
       </motion.div>
 
-      <motion.div
+      {/* Background pic and circle image */}
+      {/* <motion.div
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
@@ -52,19 +60,19 @@ function Header() {
           src={images.circle}
           alt="profile_circle"
         />
-      </motion.div>
+      </motion.div> */}
 
-      <motion.div
+      {/* <motion.div
         variant={scaleVariants}
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.flutter, images.redux, images.sass].map((circle, index) => (
+        {[images.react, images.node, images.figma].map((circle, index) => (
           <div className="circle-cmp app__flex" key={`cirlce-${index}`}>
             <img src={circle} alt="profile_bg" />
           </div>
         ))}
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 }
