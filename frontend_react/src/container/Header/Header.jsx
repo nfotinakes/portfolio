@@ -35,7 +35,7 @@ function Header() {
           <div className="app__header-container">
 
           
-            <h2> Full Stack Developer </h2> 
+            <h2>Full Stack Developer </h2> 
     
             
             <h3>React // Node // SQL </h3>
